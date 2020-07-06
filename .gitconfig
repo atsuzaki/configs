@@ -1,0 +1,25 @@
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+    name = Katherine Philip
+    email = kurerunoshikaku@yahoo.com
+[alias]
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -n 15
+    hist2 = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    s = status -s
+    b = branch
+
+    pomr = pull origin master --rebase
+    pumr = pull upstream master --rebase
+    ca = commit -a
+    cam = commit --amend
+    cane = commit --amend --no-edit
+
+    pushn = push --no-verify
+
+    ignore = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
