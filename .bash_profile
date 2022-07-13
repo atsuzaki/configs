@@ -8,6 +8,8 @@ alias ....="cd ../../../.."
 alias deit="docker exec -it"
 alias dcup="docker-compose up"
 
+alias ll="ls -al"
+
 #source /Users/Me/.ghcup/env
 #
 ## opam configuration
