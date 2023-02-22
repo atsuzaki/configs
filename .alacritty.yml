@@ -80,8 +80,8 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  # normal:
-    # family: Inconsolata for Powerline
+  normal:
+    family: Menlo for Powerline # Mac
     # Font family
     #
     # Default:
@@ -212,7 +212,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+wndow.opacity: 1.0
 
 # Mouse bindings
 #
@@ -301,7 +301,7 @@ live_config_reload: true
 #   - (Linux) user login shell
 #   - (Windows) powershell
 shell:
-  # program: /usr/local/bin/fish
+  # program: /opt/homebrew/bin/fish
   program: /bin/bash
   args:
     - --login
